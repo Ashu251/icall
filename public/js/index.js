@@ -17,12 +17,12 @@ var socket = io();
            jQuery('#messages').append(li);
        });
 
-       socket.emit('createMessage', {
-           from: 'Frank',
-           text: 'hi'
-       }, function (data) {
-           console.log('got it', data);
-       });
+    //    socket.emit('createMessage', {
+    //        from: 'Frank',
+    //        text: 'hi'
+    //    }, function (data) {
+    //        console.log('got it', data);
+    //    });
 
        jQuery('#message-form').on('submit', function (e) {
            e.preventDefault();
