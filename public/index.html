@@ -5,20 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
-    <h1>welcome to icall app</h1>
+<body class="chat">
+    <div class="chat__sidebar">
+        <h3>People</h3>
+        <div class="" id="users"></div>
+    </div>
 
-    <ol class="" id="messages">
+    <div class="chat__main">
 
-    </ol>
+            <ol class="chat__messages" id="messages">
 
-    <form action="" class="" id="message-form">
-        <input type="text" name="message" />
-        <button>send</button>
-    </form>
-    <button class="" id="send-location">Send location</button>
+                </ol>
+                <div class="chat__footer">
+        <form action="" class="" id="message-form">
+            <input type="text" name="message" autofocus autocomplete="off"/>
+            <button>send</button>
+        </form>
+        <button class="" id="send-location">Send location</button>
+    </div>
+    </div>
 
+    
+
+   
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/libs/jquery-3.3.1.min.js"></script>
     <script src="/js/index.js"></script>
